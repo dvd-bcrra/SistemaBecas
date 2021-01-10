@@ -1,0 +1,40 @@
+<%- contentFor('body') %>
+<div class="jumbotron text-center">
+  <form action="/socioeconomicos" method="POST"> 
+    <!-- <form action="/venta" method="GET">--> 
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h3>Ingrese su información laboral</h3>
+          <br>
+          <div class="form-group">
+            <label>¿Qué puesto laboral tiene?</label>
+            <input type="text" name="puesto" class="form-control" required >
+          </div>
+          <div class="form-group">
+            <label>Nombre de la empresa, organización o institución</label>
+            <input type="text" name="nombreEmpresa" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label>Proporcione la dirección de la empresa</label>
+            <input type="text" name="direccionEmpresa" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label>Ingrese el número de teléfono de la empresa</label>
+            <input type="text" name="telEmpresa" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label>Indique su horario laboral</label>
+            <input type="text" name="horarioLaboral" class="form-control"required>
+          </div>
+          <div class="form-group">
+            <label>¿Cuál es su ingreso mensual?</label>
+            <input type="text" name="ingresoMensuale" class="form-control"required>
+          </div>
+                <div class="form-group text-right">
+                    <a href="/datosPersonales" class="btn btn-lg btn-primary">Anterior</a>
+            <a href="/datosSocioeconomicos" class="btn btn-lg btn-primary">Siguiente</a>
+          </div> 
+      </div>
+     </div>
+    </form>
+</div>

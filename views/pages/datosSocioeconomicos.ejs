@@ -1,0 +1,104 @@
+<%- contentFor('body') %>
+<div class="jumbotron text-center">
+  <form action="/socioeconomicos" method="GET"> 
+    <!-- <form action="/venta" method="GET">--> 
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h3>Ingrese su información socioeconómica</h3>
+          <br>
+          <div class="form-group">
+            <label>Ingresos mensuales familiares</label>
+            <input type="number" name="ingresosMensuales" class="form-control" step="0.01" required placeholder="00.00">
+          </div>
+          <div class="form-group">
+            <label>Actualmente vive con:</label>
+            <select name="viveCon" id="viveCon"class="select-css" required>
+              <option disabled selected hidden>Seleccione una opción</option>
+                <option value="Solo">Solo</option>  
+                <option value="Padres">Padres</option>
+                <option value="Familiares">Familiares (tíos, abuelos, ect.)</option>
+                <option value="Esposo(a)">Esposo(a)</option>
+                <option value="Amigos">Amigos</option>
+               </select>
+          </div>
+          <div class="form-group">
+            <label>Ingrese el semestre que se encuentra cursando actualmente</label>
+            <input type="number" name="semestre" class="form-control" required placeholder="Ej.: 8">
+          </div>
+          <div class="form-group">
+          <label>Indique cuánto tiempo tiene viviendo en este domicilio</label>
+            <input type="text" name="tiempoenVivienda" class="form-control" required placeholder="Ej.: 2 años">
+          </div>
+          <div class="form-group">
+            <label>Indique cuántas personas adultas y cuántos niños viven en el domicilio</label>
+            <input type="text" name="nodePersonas" class="form-control" required placeholder="Ej.: 2 adultos y 1 niño">
+            </div>
+          <div class="form-group">
+          <label>La casa donde vive es:</label>
+          <select name="casaEs" id="casaEs"class="select-css" required>
+            <option disabled selected hidden>Seleccione una opción</option>
+              <option value="Propia">Propia</option>  
+              <option value="Rentada">Rentada</option>
+              <option value="Prestada">Prestada</option>
+              <option value="Otra">Otra</option>
+             </select>          
+            </div>
+            <div class="form-group">
+              <label>La casa es de:</label>
+              <select name="casaEsDe" id="casaEsDe"class="select-css" required>
+                <option disabled selected hidden>Seleccione una opción</option>
+                  <option value="Material">Material</option>  
+                  <option value="Madera">Madera</option>
+                  <option value="Otro">Otro</option>
+                 </select>          
+                </div>
+            <div class="form-group">
+              <label>Indique cuántas recámaras tiene</label>
+              <input type="number" name="noRecamaras" class="form-control" required placeholder="Ej.: 3">
+              </div>
+            <div class="form-group">
+                <label>Servicios con los que cuenta la casa</label><br>
+                <input type="checkbox" id="agua" name="agua" value="Agua">
+                <label for="agua">Agua</label><br>
+                <input type="checkbox" id="luz" name="luz" value="Luz">
+                <label for="luz">Luz</label><br>
+                <input type="checkbox" id="drenaje" name="drenaje" value="Drenaje">
+                <label for="drenaje">Drenaje</label><br>
+                <input type="checkbox" id="telefono" name="telefono" value="Telefono">
+                <label for="telefono">Teléfono local</label><br>
+                <input type="checkbox" id="internet" name="internet" value="Internet">
+                <label for="internet">Internet</label><br>
+                <input type="checkbox" id="tv" name="tv" value="Tv">
+                <label for="tv">Tv por cable</label><br>
+              </div>
+              <div class="form-group">
+                <label>Ingrese el número de automóviles que tienen en su casa</label>
+                <input type="number" name="autos" class="form-control" required placeholder="Ej.: 1">
+              </div>
+              <div class="form-group">
+                <label>Transporte que utiliza</label><br>
+                <input type="checkbox" id="propio" name="propio" value="Propio">
+                <label for="agua">Auto propio</label><br>
+                <input type="checkbox" id="familiar" name="familiar" value="Familiar">
+                <label for="familiar">Auto familiar</label><br>
+                <input type="checkbox" id="camion" name="camion" value="Camion">
+                <label for="camion">Camión</label><br>
+                <input type="checkbox" id="taxi" name="taxi" value="Taxi">
+                <label for="taxi">Taxi</label><br>
+                <input type="checkbox" id="aplicacion" name="aplicacion" value="Aplicacion">
+                <label for="aplicacion">Transporte por aplicación (Uber, Didi, Cabify, ect.)</label><br>
+                <input type="checkbox" id="otros" name="otros" value="otros">
+                <label for="otro">Otros</label><br>
+              </div>
+              <div class="form-group">
+                <label>Describa a los miembros de su familia que viven en su domicilio (parentesco, edad, escolaridad, ocupación, ingreso mensual)</label>
+                <input type="text" name="descripFamiliaries" class="form-control" required placeholder="Ej.: Mamá, 41, preparatoria, ama de casa, 0.00">
+                </div>
+                <div class="form-group text-right">
+                    <a href="/" class="btn btn-lg btn-primary">Anterior</a>
+                    <a href="/requisitos" class="btn btn-lg btn-primary">Siguiente</a>
+                </div> 
+      </div>
+     </div>
+    </form>
+</div>
